@@ -1,0 +1,122 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+env/
+venv/
+ENV/
+.venv/
+myenv/
+.Python
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+*.cover
+coverage.xml
+*.log
+*.test
+.cache/
+
+# Django specific
+*.sqlite3
+db.sqlite3
+/media/
+/staticfiles/
+/static/
+/local_settings.py
+
+# Django REST Framework specific
+drf-yasg/
+swagger.json
+swagger.yaml
+
+# Pyre type checker
+.pyre/
+
+# Flask instance folder
+instance/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Editor & IDE settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# MacOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+desktop.ini
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Pyright type checker
+.pyright/
+
+# MyPy type checker
+.mypy_cache/
+
+# Pylint
+.pylint.d/
+
+# Bandit security scanner
+.bandit/
+
+# Additional sensitive files
+*.env
+.env.*
+*.ini
+*.cfg
+*.bak
+*.swp
+
+# Celery and message brokers
+celerybeat-schedule
+celerybeat.pid
+
+# Logs and runtime files
+*.log
+*.pid
+*.sock
+
+# Coverage and testing artifacts
+.nyc_output/
+.cache/
+*.cover
+*.coverage
+coverage.xml
+nosetests.xml
+test-results/
+
+# Temporary files and backup
+*.tmp
+*.bak
+*.old
+*.orig
+
+# Deployment-specific
+*.key
+cert.pem
+key.pem
+secrets.json
