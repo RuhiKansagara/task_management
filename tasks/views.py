@@ -113,6 +113,8 @@ class TaskViewSet(viewsets.ModelViewSet):
             )
 
         instance = self.get_object()
+        PeriodicTask.objects.filter(name=f"send_task_reminder_{instance.id}").delete()
+        
         self.perform_destroy(instance)
         return Response(
             {
