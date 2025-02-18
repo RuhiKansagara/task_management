@@ -92,8 +92,10 @@ desktop.ini
 *.swp
 
 # Celery and message brokers
-celerybeat-schedule
 celerybeat.pid
+# Celery beat migration files
+celerybeat-schedule.db
+dump.rdb
 
 # Logs and runtime files
 *.log

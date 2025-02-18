@@ -7,6 +7,18 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from .serializers import RegistrationSerializer, LoginSerializer
 from django.contrib.auth.models import User
+from django.http import JsonResponse
+
+
+def check_server(request):
+    """
+    A simple view to verify that the server is working.
+    """
+    response_data = {
+        "status": "ok",
+        "message": "API is working"
+    }
+    return JsonResponse(response_data)
 
 class UserRegistrationView(APIView):
     def post(self, request, *args, **kwargs):

@@ -17,9 +17,7 @@ Follow these steps to set up the project on your local machine:
 1. **Clone the Repository**:
 
    ```bash
-   git clone 
-
-   cd backpackercars-backend
+   git clone https://github.com/RuhiKansagara/task_management.git
    ```
 
 2. **Set Up a Virtual Environment** (recommended):
@@ -40,7 +38,7 @@ Follow these steps to set up the project on your local machine:
    Create a `.env` file in the project root and configure the necessary environment variables:
 
    ```bash
-    cp env.example .env
+   cp env.example .env
    ```
 
 ## Setup
