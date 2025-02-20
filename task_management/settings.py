@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt.token_blacklist",
     "django_celery_results",
     'django_celery_beat',
+    "django_extensions",
     
     'authentication',
     'tasks',
@@ -200,5 +201,27 @@ CELERY_TIMEZONE = 'UTC'
 CELERY_BEAT_SCHEDULE = {} 
 
 
-
-
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {
+        "file": {
+            "level": "DEBUG",
+            "class": "logging.FileHandler",
+            "filename": "test_results.log",  # Log file location
+            "formatter": "detailed",
+        },
+    },
+    "formatters": {
+        "detailed": {
+            "format": "%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+        },
+    },
+    "loggers": {
+        "django.test": {
+            "handlers": ["file"],
+            "level": "DEBUG",
+            "propagate": True,
+        },
+    },
+}
